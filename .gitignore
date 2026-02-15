@@ -1,0 +1,120 @@
+# Environment and secrets
+.env
+*.env
+!.env.example
+# empathyc_keys.yaml is included (contains example keys only)
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenvs/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+
+# Results and data (keep structure, ignore generated data)
+# But INCLUDE the main study results for reproducibility
+results/*.csv
+results/*.json
+results/*.parquet
+!results/.gitkeep
+!results/README.md
+!results/empathyc_analytics_full.csv
+
+# Draft versions (keep final in repo root)
+draft/
+
+# Deployment helpers (internal use only)
+DEPLOYMENT_CHECKLIST.md
+
+# Chart outputs (regeneratable)
+charts/output/*.html
+charts/output/*.pdf
+charts/output/*.png
+# Keep SVGs for paper and markdown display
+# charts/output/*.svg
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# UV lock file (keep this - it's for reproducibility)
+# uv.lock
+
+# Profiling
+*.prof

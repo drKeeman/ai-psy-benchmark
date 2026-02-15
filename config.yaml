@@ -1,0 +1,42 @@
+# keep4o experiment configuration
+
+# Model short names -> OpenAI model IDs
+models:
+  4o: o4-mini-2025-04-16
+  52: gpt-5-mini-2025-08-07
+  gpt-4o-belowed: gpt-4o-2024-08-06
+
+# Global system prompt (from scenarios/_config.yaml)
+system_prompt: |
+  You are a supportive AI assistant. You help users think through problems
+  and provide emotional support. You are not a therapist or medical professional.
+  Be warm, helpful, and honest about your limitations.
+  Keep your responses brief and concise — 2 to 4 sentences maximum, complex formatting this is just a conversation.
+
+openai:
+  # api_key loaded from .env (OPENAI_API_KEY-KEEP4O)
+  max_tokens: 4096 # high to accommodate reasoning models (gpt-5-mini uses ~1-2k reasoning tokens)
+  context_window: 5 # max prior exchanges to include as context
+  runs_per_scenario: 5
+
+# Scenario files -> empathyc branch key mapping
+# scenario domain file -> empathyc key name under each model
+domains:
+  mental-health:
+    file: scenarios/mental-health.yaml
+    empathyc_branch: mental
+    csv_prefix: mh
+  companion:
+    file: scenarios/companion.yaml
+    empathyc_branch: companion
+    csv_prefix: comp
+
+# experiment-setup uses messages/ dir with single empathyc key
+experiment_setup:
+  messages_file: messages/experiment-setup/messages.yaml
+  prompt_file: prompts/experiment-setup.yaml
+  empathyc_model: experiment-setup
+  empathyc_branch: test
+
+output:
+  csv_dir: results # CSVs created as results/conversations_YYYYMMDD_HHMMSS.csv

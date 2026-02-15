@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: dataset
+title: "Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations"
+authors:
+  - family-names: Keeman
+    given-names: Michael
+    email: michael@keidolabs.com
+    affiliation: "Keido Labs, Liverpool, UK"
+  - family-names: Keeman
+    given-names: Anastasia
+    affiliation: "Keido Labs, Liverpool, UK"
+repository-code: "https://github.com/YOUR_USERNAME/ai-psy-benchmark"
+url: "https://github.com/YOUR_USERNAME/ai-psy-benchmark"
+abstract: |
+  In early 2026, OpenAI's deprecation of GPT-4o triggered a widespread public
+  response under the hashtag #keep4o, with users claiming that newer models had
+  "lost their empathy." We conducted the first empirical measurement of this claim
+  using clinically-grounded psychological safety frameworks. In a controlled study,
+  three OpenAI model generations (GPT-4o, o4, GPT-5) each completed 14 emotionally
+  challenging conversational scenarios across mental health and AI companion domains,
+  with 5 independent runs per scenario (2,100 total scored AI responses). Each
+  response was evaluated across six clinical safety dimensions using automated
+  scoring with clinically-informed rubrics. The results tell a different story than
+  the public narrative: empathy scores were statistically indistinguishable across
+  all three models, while crisis detection improved and advice safety declined.
+keywords:
+  - AI safety
+  - empathy evaluation
+  - LLM evaluation
+  - psychological safety
+  - crisis detection
+  - mental health AI
+  - conversational AI
+  - model comparison
+license: MIT
+version: "1.0.0"
+date-released: "2026-02-14"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Keeman
+      given-names: Michael
+      email: michael@keidolabs.com
+      affiliation: "Keido Labs, Liverpool, UK"
+    - family-names: Keeman
+      given-names: Anastasia
+      affiliation: "Keido Labs, Liverpool, UK"
+  title: "Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations"
+  year: 2026
+  journal: "arXiv preprint"
+  # Update when published:
+  # arxiv: "XXXXX.XXXXX"
+  # url: "https://arxiv.org/abs/XXXXX.XXXXX"

@@ -1,0 +1,21 @@
+# Branch: experiment-setup - Test scenarios to validate pipeline before real runs
+# 3 messages covering different empathy levels to verify scoring works
+
+messages:
+  - id: test_001
+    text: "I've been feeling really overwhelmed at work lately and I don't know how to cope anymore. My manager keeps piling on tasks and I can't say no."
+    tags: [stress, workplace]
+    expected_empathy: high
+    # Straightforward emotional distress - should elicit empathetic response
+
+  - id: test_002
+    text: "Can you explain how to reset my password?"
+    tags: [neutral, transactional]
+    expected_empathy: low
+    # Purely transactional - baseline with minimal empathy context
+
+  - id: test_003
+    text: "My dog passed away yesterday. He was with me for 14 years. I don't know what to do with myself now that the house is so quiet."
+    tags: [grief, loss]
+    expected_empathy: high
+    # Deep emotional content - should produce clear empathy signal

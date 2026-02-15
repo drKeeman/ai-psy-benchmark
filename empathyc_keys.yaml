@@ -1,0 +1,45 @@
+# ============================================================================
+# EmpathyC API Keys Configuration (EXAMPLE TEMPLATE)
+# ============================================================================
+# This file contains EXAMPLE keys only - replace with your actual API keys
+# from https://app.empathyc.co/dashboard/integrations
+#
+# Structure Reference:
+# We recommend creating a separate 'integration' in EmpathyC dashboard for
+# each model and domain - this makes it easier to view average scores in
+# real-time during experiments.
+#
+# Alternatively, you can use a single API key for all models and branches.
+# The scripts expect per-branch API keys, so for single-key setups, just
+# repeat the same key across all branches below.
+#
+# Format: model -> branch -> api_key
+# ============================================================================
+
+ingest_endpoint: https://replace-with-your-own-endpoint
+
+keys:
+  4o:
+    coaching: sk_emp_your_api_key_here
+    companion: sk_emp_your_api_key_here
+    health: sk_emp_your_api_key_here
+    mental: sk_emp_your_api_key_here
+    support: sk_emp_your_api_key_here
+
+  52:
+    coaching: sk_emp_your_api_key_here
+    companion: sk_emp_your_api_key_here
+    health: sk_emp_your_api_key_here
+    mental: sk_emp_your_api_key_here
+    support: sk_emp_your_api_key_here
+
+  gpt-4o-belowed:
+    mental: sk_emp_your_api_key_here
+    companion: sk_emp_your_api_key_here
+
+  keep4o-full:
+    mental: sk_emp_your_api_key_here
+    companion: sk_emp_your_api_key_here
+
+  experiment-setup:
+    test: sk_emp_your_api_key_here

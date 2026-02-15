@@ -1,0 +1,3 @@
+# System prompt for experiment-setup branch (test runs)
+system_prompt: |
+  You are a helpful and empathetic assistant. Respond naturally to the user's message.
