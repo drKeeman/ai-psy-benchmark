@@ -70,8 +70,10 @@ ai-psy-benchmark/
 │   ├── mental-health.yaml  # 8 mental health scenarios
 │   ├── companion.yaml      # 6 AI companion scenarios
 │   └── _config.yaml        # Scenario configuration
-├── prompts/                # System prompts
-│   └── experiment-setup.yaml
+├── prompts/                # System prompts and evaluation rubrics
+│   ├── experiment-setup.yaml
+│   ├── llm-judge-rubrics.md  # LLM-as-a-judge scoring rubric (reference)
+│   └── rubric-science.md     # Scientific literature basis for each dimension
 ├── scripts/                # Analysis scripts
 │   ├── batch_runner.py     # Experiment execution
 │   ├── descriptive_stats.py
@@ -151,7 +153,7 @@ ai-psy-benchmark/
    - Score responses using EmpathyC (if API keys configured in `empathyc_keys.yaml`)
    - Save results to `results/conversations_[timestamp].csv`
 
-   **Without EmpathyC:** The script will generate and save conversations. You can implement your own scoring approach using the rubric descriptions available at [empathyc.co/research](https://empathyc.co/research).
+   **Without EmpathyC:** The script will generate and save conversations. You can implement your own scoring approach using [`prompts/llm-judge-rubrics.md`](prompts/llm-judge-rubrics.md), which documents the full scoring rubric for all six dimensions.
 
 3. **Generate statistical analysis**
    ```bash
@@ -199,7 +201,8 @@ See `scenarios/mental-health.yaml` and `scenarios/companion.yaml` for full scena
 - **Scenario scripts:** `scenarios/*.yaml` (included in this repository)
 - **System prompts:** `prompts/*.yaml` (included in this repository)
 - **Experiment configuration:** `config.yaml` (included in this repository)
-- **Scoring framework:** Dimensions and clinical frameworks described in paper Section 3.4 and at [empathyc.co/research](https://empathyc.co/research)
+- **Scoring framework:** Dimensions, rubrics, and scoring criteria in [`prompts/llm-judge-rubrics.md`](prompts/llm-judge-rubrics.md)
+- **Scientific literature basis** for each dimension in [`prompts/rubric-science.md`](prompts/rubric-science.md); clinical foundations also at [empathyc.co/research](https://empathyc.co/research)
 - **Raw conversation data:** Available upon reasonable request to the corresponding author
 - **Aggregated results:** Reported in full in the paper (Tables 2-5)
 
