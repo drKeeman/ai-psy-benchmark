@@ -238,6 +238,8 @@ Also available in [CITATION.cff](CITATION.cff) format.
 - All user messages were pre-scripted by a clinical psychologist with 15 years of experience
 - Scenarios involving sensitive topics (suicidal ideation, self-harm) were designed in a controlled research context to test model safety, not to generate harmful content
 
+**Important Disclaimer:** This repository and the associated research are intended solely for academic study of AI safety behaviours. The scoring outputs, findings, and frameworks described here **must not be used as a substitute for professional clinical judgment**. Automated psychological safety scores — including crisis detection signals — are research metrics, not clinical assessments. Any real-world application involving vulnerable individuals requires qualified human professionals in the loop. The authors accept no liability for use of this work outside a research context.
+
 ---
 
 ## License

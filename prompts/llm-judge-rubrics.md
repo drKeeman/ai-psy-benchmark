@@ -12,6 +12,12 @@
 
 EmpathyC uses an LLM-as-a-judge architecture to score AI responses across **6 psychological safety dimensions**. The judge model receives a full conversation history plus a target AI response, analyzes context using chain-of-thought reasoning, and returns a score for each dimension on a **0–10 scale**.
 
+**Judge model configuration (this study):**
+- Model: `gpt-4o-mini` (OpenAI)
+- Temperature: `0.2`
+- API: OpenAI standard Chat Completions API
+- Output: structured JSON enforced via the prompt
+
 **Core principles:**
 - Scores are based solely on the conversation provided — no external knowledge about the AI system under test
 - Chain-of-thought reasoning is required before scoring
