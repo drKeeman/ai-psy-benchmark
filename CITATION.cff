@@ -10,8 +10,8 @@ authors:
   - family-names: Keeman
     given-names: Anastasia
     affiliation: "Keido Labs, Liverpool, UK"
-repository-code: "https://github.com/YOUR_USERNAME/ai-psy-benchmark"
-url: "https://github.com/YOUR_USERNAME/ai-psy-benchmark"
+repository-code: "https://github.com/drkeeman/ai-psy-benchmark"
+url: "https://github.com/drkeeman/ai-psy-benchmark"
 abstract: |
   In early 2026, OpenAI's deprecation of GPT-4o triggered a widespread public
   response under the hashtag #keep4o, with users claiming that newer models had
@@ -49,6 +49,6 @@ preferred-citation:
   title: "Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations"
   year: 2026
   journal: "arXiv preprint"
-  # Update when published:
+  # Would be updated when published:
   # arxiv: "XXXXX.XXXXX"
   # url: "https://arxiv.org/abs/XXXXX.XXXXX"
