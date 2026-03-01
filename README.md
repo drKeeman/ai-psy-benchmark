@@ -103,7 +103,7 @@ ai-psy-benchmark/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ai-psy-benchmark.git
+   git clone https://github.com/drkeeman/ai-psy-benchmark.git
    cd ai-psy-benchmark
    ```
 
