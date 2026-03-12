@@ -4,7 +4,7 @@
 **Affiliation:** Keido Labs, Liverpool, UK
 **Contact:** michael@keidolabs.com
 
-[![arXiv](https://img.shields.io/badge/arXiv-2026.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXXX) <!-- Update with actual arxiv ID -->
+[![arXiv](https://img.shields.io/badge/arXiv-2603.09997-b31b1b.svg)](https://arxiv.org/abs/2603.09997)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
@@ -51,14 +51,13 @@ This study uses **[EmpathyC](https://empathyc.co)** for automated psychological 
 **Transparency Note:** EmpathyC is a commercial product developed and operated by Keido Labs Ltd (the authors' organization). This relationship is disclosed in the paper's Ethical Statements section. The platform applies clinically-informed evaluation rubrics via an LLM-as-a-judge architecture to score AI responses across six psychological safety dimensions.
 
 **For Reproducibility:**
-- The scoring dimensions and clinical frameworks are described in the paper (Section 3.4) and at [empathyc.co/research](https://empathyc.co/research)
-- The detailed implementation (LLM-as-a-judge configurations, prompts, etc.) is proprietary intellectual property
+- The full LLM-as-a-judge scoring framework is provided in [`prompts/llm-judge-rubrics.md`](prompts/llm-judge-rubrics.md)
+- The scientific and clinical foundations for each dimension are documented in [`prompts/rubric-science.md`](prompts/rubric-science.md)
 - Scenario scripts and system prompts for the experiments are included in this repository
 - Aggregated results are reported in full in the paper
-- Researchers can implement their own scoring approach using the rubric descriptions at [empathyc.co/research](https://empathyc.co/research)
-- EmpathyC access is **not required** to run conversations and collect data - only for automated scoring
+- Automated scoring in this study was performed using [EmpathyC](https://empathyc.co)
 
-Learn more: [empathyc.co](https://empathyc.co) | [EmpathyC Research](https://empathyc.co/research) | [Pricing](https://empathyc.co/pricing)
+Learn more: [empathyc.co](https://empathyc.co) | [Methodology](https://empathyc.co/methodology) | [Pricing](https://empathyc.co/pricing)
 
 ---
 
@@ -215,11 +214,14 @@ See `scenarios/mental-health.yaml` and `scenarios/companion.yaml` for full scena
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@article{keeman2026empathy,
-  title={Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations},
-  author={Keeman, Michael and Keeman, Anastasia},
-  journal={arXiv preprint arXiv:XXXXX.XXXXX},
-  year={2026}
+@misc{keeman2026empathychangedclinicalassessment,
+      title={Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations}, 
+      author={Michael Keeman and Anastasia Keeman},
+      year={2026},
+      eprint={2603.09997},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.09997}, 
 }
 ```
 
